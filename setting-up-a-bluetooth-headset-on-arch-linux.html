@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="setting-up-a-bluetooth-headset-on-arch-linux_files/roxlu.css">
+  <link href="setting-up-a-bluetooth-headset-on-arch-linux_files/css.css" rel="stylesheet" type="text/css">  
+  <link href="setting-up-a-bluetooth-headset-on-arch-linux_files/css_002.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" async="" src="setting-up-a-bluetooth-headset-on-arch-linux_files/ga.js"></script><script src="setting-up-a-bluetooth-headset-on-arch-linux_files/mootools-core-1.js"></script>
+  <script src="setting-up-a-bluetooth-headset-on-arch-linux_files/roxlu.js"></script>
+</head>
+<body>
+  
+  <svg id="logo-top" xmlns="http://www.w3.org/2000/svg" width="91.636" viewBox="0 0 271.636 67.365">
+    <g id="roxlu-logo" transform="translate(-196.581 -267.78)">
+      <path id="Path_5" data-name="Path 5" d="M66.217-65.1H48.979L43.25-24.328c-.858,6.105-3.426,10.378-10.736,10.378-6.591,0-7.136-4.272-6.277-10.378L31.966-65.1H14.729L9-24.328C6.771-8.481,10.679,1.116,32.016,1.116c20.437,0,26.187-9.6,28.43-25.444Z" transform="translate(402 334)" fill="#ca6fc5"></path>
+      <path id="Path_4" data-name="Path 4" d="M24.911-14.495,32.027-65.1H14.734L5.58,0H20.935V0L46.044-.01l2.038-14.495Z" transform="translate(360 334)" fill="#ffee5b"></path>
+      <path id="Path_3" data-name="Path 3" d="M71.865-65.1H52.578l-13.6,18.769L30.956-65.1H12.279l15.1,32.472L1.7,0h19.29L35.807-19.435,44.849,0H63.523L47.329-32.628Z" transform="translate(302 334)" fill="#8b87ff"></path>
+      <path id="Path_2" data-name="Path 2" d="M59.382-66.22C36.13-66.22,29.6-54.42,26.657-33.5,23.581-11.62,27.472,1.146,51.535,1.146c23.252,0,29.922-12.766,33-34.649C87.472-54.42,83.444-66.22,59.382-66.22Zm-.5,15.07c8.654,0,9.611,4.708,7.792,17.647C64.726-19.624,61.5-13.951,52.035-13.951c-8.654,0-9.339-6.639-7.525-19.553,1.955-13.9,4.909-17.647,14.374-17.647Z" transform="translate(227 334)" fill="#51d073"></path>
+      <path id="Path_1" data-name="Path 1" d="M60.606-43.785C62.835-59.315,54.779-65.1,38.932-65.1H28.138v0h-13.4L5.581,0H22.874l3.431-24.4H30.5L39.359,0H57.845L47.25-26.08c7.59-2.46,12-7.857,13.358-17.7ZM30.119-51.523h5.848c6.463,0,8.25.914,7.513,5.863-.773,5.839-3.673,7.683-10.227,7.683H28.214Z" transform="translate(191 334)" fill="#ff4545"></path>
+    </g>
+  </svg>
+
+  <div id="content">
+
+
+    <div id="page">
+
+      <ul id="post_links">
+            <li>
+        <a href="https://www.roxlu.com/2019/061/blender-2-8-opengl-buffer-exporter">Blender 2.8 OpenGL Buffer Exporter</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2019/060/blender-2-8-baking-lightmaps">Blender 2.8 Baking lightmaps</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2019/059/blender-2-8-tips-and-tricks">Blender 2.8 Tips and Tricks</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2019/058/setting-up-a-bluetooth-headset-on-arch-linux">Setting up a Bluetooth Headset on Arch Linux</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2016/057/compiling-x264-on-windows-with-msvc">Compiling x264 on Windows with MSVC</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2016/056/c-c---snippets">C/C++ Snippets</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2015/054/reading-chunks-from-a-buffer">Reading Chunks from a Buffer</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2015/053/handy-bash-commands">Handy Bash Commands</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2015/052/building-a-zero-copy-parser">Building a zero copy parser</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2015/051/kalman-filter">Kalman Filter</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2015/050/saving-pixel-data-using-libpng">Saving pixel data using libpng</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/049/compile-apache--php-and-mysql-on-mac-10-10">Compile Apache, PHP and MySQL on Mac 10.10</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/048/fast-pixel-transfers-with-pixel-buffer-objects">Fast Pixel Transfers with Pixel Buffer Objects</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/047/high-resolution-timer-function-in-c-c--">High Resolution Timer function in C/C++</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/046/rendering-text-with-pango--cairo-and-freetype">Rendering text with Pango, Cairo and Freetype</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/045/fast-opengl-blur-shader">Fast OpenGL blur shader</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/043/spherical-environment-mapping-with-opengl">Spherical Environment Mapping with OpenGL</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/042/using-openssl-with-memory-bios">Using OpenSSL with memory BIOs</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/041/attributeless-vertex-shader-with-opengl">Attributeless Vertex Shader with OpenGL</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/040/circular-image-selector">Circular Image Selector</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/039/decoding-h264-and-yuv420p-playback">Decoding H264 and YUV420P playback</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/038/fast-fourier-transform">Fast Fourier Transform</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/037/opengl-rim-shader">OpenGL Rim Shader</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/036/rendering-the-depth-buffer">Rendering The Depth Buffer</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/035/delaunay-triangulation">Delaunay Triangulation</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/034/rapidxml">RapidXML</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/033/git-snippets">Git Snippets</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/032/cross-platform-opengl">Cross Platform OpenGL</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/031/basic-shading-with-opengl">Basic Shading With OpenGL</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/030/open-source-libraries-for-creative-coding">Open Source Libraries For Creative Coding</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/029/bouncing-particle-effect">Bouncing particle effect</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/028/opengl-instanced-rendering">OpenGL Instanced Rendering</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/027/a-collection-of-interesting-articles">A Collection Of Interesting Articles</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/026/mapping-a-texture-on-a-disc">Mapping a texture on a disc</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2014/025/download-html-page-using-curl">Download HTML page using CURL</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/024/height-field-simulation-on-gpu">Height Field Simulation on GPU</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/023/scholar">Scholar</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/022/opencv">OpenCV</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/021/opengl">openGL</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/020/math">Math</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/019/gists-to-remember">Gists to remember</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/018/reverse-ssh">Reverse SSH</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/017/working-set">Working Set</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/016/consumer---producer-model-with-libuv">Consumer + Producer model with libuv</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/015/parsing-binary-data">Parsing binary data</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/014/c---file-operation-snippets">C++ file operation snippets</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/013/importance-of-blur-with-image-gradients">Importance of blur with image gradients</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/012/real-time-oil-painting-with-opengl">Real-time oil painting with openGL</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/011/basic-cuda-example">Basic CUDA example</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/010/x264-encoder">x264 encoder</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/009/generative-helix-with-opengl">Generative helix with openGL</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/008/mini-test-with-vector-field">Mini test with vector field</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/007/protractor-gesture-recognizer">Protractor gesture recognizer</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/006/hair-simulation">Hair simulation</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/005/some-glitch-screenshots">Some glitch screenshots</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/004/working-on-video-installation">Working on video installation</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/003/generative-meshes">Generative meshes</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/002/converting-video-audio-using-avconv">Converting video/audio using avconv</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2013/001/auto-start-terminal-app-on-mac">Auto start terminal app on mac</a>
+        </li>
+            <li>
+        <a href="https://www.roxlu.com/2012/001/export-blender-object-to-simple-file-format">Export blender object to simple file format</a>
+        </li>
+            </ul>
+
+      <h1>Setting up a Bluetooth Headset on Arch Linux</h1>
+
+<p>I got a Sennheiser PXC 550 headset that I wanted to setup on my
+Arch Linux PC recently. The PXC 550 headset is a wireless headset
+that can be used wirelessly using bluetooth. I'm setting it up on
+a PC with the following specs</p>
+
+<ul>
+<li><strong>OS</strong>:  Linux arch680 5.0.7-arch1-1-ARCH x86_64 GNU/Linux</li>
+<li><strong>Bluetooth</strong>: External USB Bluetooth adapter with Broadcom chipset</li>
+<li><strong>Headset</strong>: Sennheiser PXC 550    </li>
+</ul>
+
+<p>Before we get started make sure your system is up to date. If you
+don't feel like doing a full system upgrade at least make sure to
+update your the keyring and packages.</p>
+
+<h3>Updating your system</h3>
+
+<p><strong>Full upgrade</strong></p>
+
+<pre class="sh" style="font-family:monospace;"># pacman -Sy
+# pacman-key --refresh-keys
+# pacman -Syu</pre>
+
+<p><strong>Minimal upgrade</strong></p>
+
+<pre class="sh" style="font-family:monospace;"># pacman -Sy
+# pacman-key --refresh-keys</pre>
+
+<h3>Installing necessary packages</h3>
+
+<pre class="sh" style="font-family:monospace;"># pacman -S pulseaudio-bluetooth
+# pacman -S pulseaudio-alsa
+# pacman -S pavucontrol</pre>
+
+<h3>Configure PulseAudio and Bluetooth</h3>
+
+<p>Add the following to the bottom of the main bluetooth
+configuration file:</p>
+
+<pre class="sh" style="font-family:monospace;">#emacs -nw /etc/bluetooth/main.cf
+&nbsp;
+AutoEnable=true</pre>
+
+<p>To make sure that your headsets is automatically connected to your bluetooth
+device we need to enable the <code>switch-on-connect</code> module. We also copy the 
+configurations to our user directory because we don't want to change the 
+system wide settings. If you want you can also change <code>/etc/pulse/*</code> though,
+the choice is whatever you prefer.</p>
+
+<pre class="sh" style="font-family:monospace;">mkdir -p ~/.config/pulse
+cp /etc/pulse/* ~/.config/pulse/
+&nbsp;
+&nbsp;
+# emacs -nw ~/.config/pulse/default.pa
+load-module module-switch-on-connect      -- add this at the bottom</pre>
+
+<p>After making these changes restart bluetooth:</p>
+
+<pre class="sh" style="font-family:monospace;"># systemctl restart bluetooth</pre>
+
+<h3>Pairing your headset</h3>
+
+<p>Ok we've finally done all the ground work to pair our
+PXC 550. Open a terminal and start <code>bluetoothctl</code>. We use
+<code>bluetoothctl</code> to pair, trust and connect to the headset.</p>
+
+<p>But before we start we check if the device was already paired and
+maybe incorrectly configured. To make sure we start off with the
+same settings check if the device was paired, then remove
+it and start from scratch:</p>
+
+<pre class="sh" style="font-family:monospace;"># bluetoothctl
+&nbsp;
+[bluetooth]# paired-devices
+Device 00:1D:43:6D:03:26 PXC 550
+&nbsp;
+[bluetooth]# remove 00:1D:43:6D:03:26</pre>
+
+<p>Ok, now we can start with a clean configuration. Execute the
+following commands. After you've given the <code>scan on</code> command (see
+below), you need to put your PXC headset into pairing more.</p>
+
+<p>To set your PXC 550 into pairing mode hold down the sound effect
+button (on the right cap) for 4 seconds. The headset will tell
+you something like "Pairing..."</p>
+
+<p>You can use the <code>TAB</code> key to autocomplete the device IDs. You don't 
+have to type them yourself, simply type the first characters and hit <code>TAB</code>.</p>
+
+<pre class="sh" style="font-family:monospace;">$ bluetoothctl
+&nbsp;
+[bluetooth]# power on
+[bluetooth]# agent on
+[bluetooth]# default-agent
+[bluetooth]# scan on
+&nbsp;
+[NEW] Device 00:1D:43:6D:03:26 PXC 550
+&nbsp;
+[bluetooth]# pair 00:1D:43:6D:03:26     -- pair with the device
+[bluetooth]# connect 00:1D:43:6D:03:26  -- connect with the device
+[bluetooth]# trust 00:1D:43:6D:03:26    -- trust the device
+&nbsp;
+[bluetooth]# scan off
+[bluetooth]# exit</pre>
+
+<h3>Verify if your headset is working</h3>
+
+<p>You can use <code>pacat</code> or just open a YouTube video. To playback a YouTube
+video make sure to restart your browser if you already opened it.</p>
+
+<p><code>sh
+pacat &lt; /dev/urandom</code></p>
+
+<p>You can also open <code>pavucontrol</code> and see if the bluetooth headset was 
+found in the output devices tab.</p>
+
+<h3>Troubleshooting</h3>
+
+<p>Here are some commands that can help you to get more information
+when you're running into problems.</p>
+
+<p><strong>dmesg</strong></p>
+
+<pre class="sh" style="font-family:monospace;"># dmesg | grep -i bluetooth
+&nbsp;
+[    5.114524] Bluetooth: Core ver 2.22
+[    5.114534] Bluetooth: HCI device and connection manager initialized
+[    5.114538] Bluetooth: HCI socket layer initialized
+[    5.114539] Bluetooth: L2CAP socket layer initialized
+[    5.114541] Bluetooth: SCO socket layer initialized
+[    5.181918] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    5.181919] Bluetooth: BNEP filters: protocol multicast
+[    5.181922] Bluetooth: BNEP socket layer initialized
+[    5.264246] Bluetooth: hci1: BCM: chip id 63
+[    5.265242] Bluetooth: hci1: BCM: features 0x07
+[    5.281221] Bluetooth: hci1: arch680
+[    5.282232] Bluetooth: hci1: BCM20702A1 (001.002.014) build 0000
+[    5.282399] bluetooth hci1: Direct firmware load for brcm/BCM20702A1-0a5c-21e8.hcd failed with error -2
+[    5.282400] Bluetooth: hci1: BCM: Patch brcm/BCM20702A1-0a5c-21e8.hcd not found
+[   16.534360] Bluetooth: RFCOMM TTY layer initialized
+[   16.534366] Bluetooth: RFCOMM socket layer initialized
+[   16.534371] Bluetooth: RFCOMM ver 1.11</pre>
+
+<p><strong>lsmod</strong></p>
+
+<pre class="sh" style="font-family:monospace;">$ lsmod | grep -i bluetooth
+bluetooth             651264  49 btrtl,btintel,btbcm,bnep,btusb,rfcomm
+ecdh_generic           24576  3 bluetooth
+rfkill                 28672  4 bluetooth,cfg80211
+crc16                  16384  2 bluetooth,ext4</pre>
+
+<p><strong>btmon</strong></p>
+
+<p>You can run <code>btmon</code> in a separate terminal while you're scanning
+for your device and see if there are logs that contain e.g. the
+name of your device.</p>
+
+<pre class="sh" style="font-family:monospace;"># btmon
+Bluetooth monitor ver 5.50
+= Note: Linux version 5.0.7-arch1-1-ARCH (x86_64)                                                                                                                 0.794111
+= Note: Bluetooth subsystem version 2.22                                                                                                                          0.794112
+= New Index: 5C:F3:70:81:F0:5A (Primary,USB,hci1)                                                                                                          [hci1] 0.794113
+= Open Index: 5C:F3:70:81:F0:5A                                                                                                                            [hci1] 0.794114
+= Index Info: 5C:F3:70:81:F0:5A (Broadcom Corporation)                                                                                                     [hci1] 0.794114
+= New Index: 9C:B6:D0:02:2D:64 (Primary,USB,hci0)                                                                                                          [hci0] 0.794114
+= Open Index: 9C:B6:D0:02:2D:64                                                                                                                            [hci0] 0.794114
+= Index Info: 9C:B6:D0:02:2D:64 (Qualcomm)                                                                                                                 [hci0] 0.794115
+@ MGMT Open: bluetoothd (privileged) version 1.14                                                                                                        {0x0001} 0.794115
+@ MGMT Open: btmon (privileged) version 1.14                                                                                                             {0x0002} 0.794125
+&gt; HCI Event: Connect Request (0x04) plen 10                                                                                                            #1 [hci1] 27.312940
+        Address: 00:16:94:29:CB:82 (Sennheiser Communications A/S)
+        Class: 0x240404
+          Major class: Audio/Video (headset, speaker, stereo, video, vcr)
+          Minor class: Wearable Headset Device
+          Rendering (Printing, Speaker)
+          Audio (Speaker, Microphone, Headset)
+        Link type: ACL (0x01)</pre>
+
+<p><strong>lsusb</strong></p>
+
+<p>Because my bluetooth device is a simple USB adapter, I used
+<code>lsusb -v</code> to find more information about the type of device that
+I use.</p>
+
+<pre class="sh" style="font-family:monospace;"># lsusb -v
+Bus 001 Device 007: ID 0a5c:21e8 Broadcom Corp. BCM20702A0 Bluetooth 4.0
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass          255 Vendor Specific Class
+  bDeviceSubClass         1 
+  bDeviceProtocol         1 
+  bMaxPacketSize0        64
+  idVendor           0x0a5c Broadcom Corp.
+  idProduct          0x21e8 BCM20702A0 Bluetooth 4.0
+  bcdDevice            1.12
+  iManufacturer           1 Broadcom Corp
+  iProduct                2 BCM20702A0
+  iSerial                 3 5CF37081F05A
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength       0x00da
+    bNumInterfaces          4
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower                0mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           3
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      1 
+      bInterfaceProtocol      1 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0010  1x 16 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x82  EP 2 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               1
+      Endpoint Descriptor:</pre>
+
+<p><strong>pacman</strong></p>
+
+<p>You can use <code>pacman</code> to see what bluetooth packages are currently installed.
+Use the <code>pacman -Qs</code> with a search term like <code>blue</code>.</p>
+
+<pre class="sh" style="font-family:monospace;">$ pacman -Qs blue
+local/blueman 2.0.8-2
+    GTK+ Bluetooth Manager
+local/bluez 5.50-6
+    Daemons for the bluetooth protocol stack
+local/bluez-libs 5.50-6
+    Deprecated libraries for the bluetooth protocol stack
+local/bluez-utils 5.50-6
+    Development and debugging utilities for the bluetooth protocol stack
+local/pulseaudio-bluetooth 12.2-2
+    Bluetooth support for PulseAudio
+local/qt5-connectivity 5.12.2-1 (qt qt5)
+    Provides access to Bluetooth hardware
+local/sbc 1.4-1
+    Bluetooth Subband Codec (SBC) library</pre>
+
+<p>Also checking what pulse audio packages are installed can give
+your more info while you're running into issues.</p>
+
+<pre class="sh" style="font-family:monospace;">$ pacman -Qs pulse
+local/libcanberra-pulse 0.30+2+gc0620e4-2
+    PulseAudio plugin for libcanberra
+local/libpulse 12.2-2
+    A featureful, general-purpose sound server (client library)
+local/pavucontrol 1:4.0-1
+    PulseAudio Volume Control
+local/pulseaudio 12.2-2
+    A featureful, general-purpose sound server
+local/pulseaudio-alsa 2-4
+    ALSA Configuration for PulseAudio
+local/pulseaudio-bluetooth 12.2-2
+    Bluetooth support for PulseAudio
+local/pulsemixer 1.4.0-3
+    CLI and curses mixer for pulseaudio</pre>
+
+
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-579478-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+</body></html>
