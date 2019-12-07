@@ -1,0 +1,3 @@
+journalctl -p err -b   
+grep -E "(EE)|(WW)|error|failed|Time" /var/log/Xorg.0.log 
+Terminó en .444
