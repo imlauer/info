@@ -1,0 +1,2 @@
+Activate /dev/mixer for slstatus
+echo "snd-pcm-oss" >> /etc/modules-load.d/modules.conf
